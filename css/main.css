@@ -1,0 +1,216 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* الرأس */
+header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    animation: slideDown 1s ease-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    animation: slideDown 1.5s ease-out;
+}
+
+/* الحقول والنماذج */
+.form-label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+.form-control {
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+/* الزر */
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    animation: popUp 0.8s ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* الجدول */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.table th {
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.table td {
+    color: #34495e;
+}
+
+.table .btn-primary {
+    background-color: #3498db;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.table .btn-primary:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.table .btn-danger {
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.table .btn-danger:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.custom-dialog {
+    border: none;
+    border-radius: 20px;
+    padding: 0;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: scaleIn 0.4s ease-in-out;
+    position: relative;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    overflow: hidden;
+}
+
+
+.custom-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dialog-content {
+    padding: 30px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.dialog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dialog-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.dialog-content button {
+    background-color: #fff;
+    color: #ff5f6d;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.dialog-content button:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
